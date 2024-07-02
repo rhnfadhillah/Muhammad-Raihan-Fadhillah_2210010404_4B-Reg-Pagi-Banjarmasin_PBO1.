@@ -175,7 +175,7 @@ for (int i = 0; i < jumlahBarang; i++) {
         ....
 }
 
-while (count < kapasitas) {
+while (kapasitasAwal < kapasitas) {
     ....
 }
 ```
