@@ -20,9 +20,9 @@ public class KasirBeraksi {
         int kapasitas = scanner.nextInt();
 
         Kasir kasir = new Kasir(kapasitas);
-        int count = 0;
+        int kapasitasAwal = 0;
 
-        while (count < kapasitas) {
+        while (kapasitasAwal < kapasitas) {
             System.out.println("\n===========================");
             System.out.println("Pilih jenis barang:");
             System.out.println("1. Barang biasa");
@@ -60,7 +60,7 @@ public class KasirBeraksi {
                 BarangDiskon barang = new BarangDiskon(nama, harga, jumlah, diskon);
                 kasir.tambahBarang(barang);
             }
-            count ++;
+            kapasitasAwal ++;
         }
 
         // Mencetak struk
