@@ -1,6 +1,6 @@
 # Proyek Akhir Pemrograman Berbasis Objek 1
 
-Proyek ini adalah contoh sederhana aplikasi pengolahan data mahasiswa menggunakan Java sebagai tugas akhir dari mata kuliah pemrograman berbasis objek 1.
+Proyek ini adalah contoh sederhana aplikasi Kasir menggunakan Java sebagai proyek tugas akhir dari mata kuliah pemrograman berbasis objek 1.
 
 ## Deskripsi
 
@@ -12,33 +12,45 @@ Aplikasi ini mengimplementasikan beberapa konsep penting dalam pemrograman beror
 
 Berikut adalah bagian kode yang relevan dengan konsep OOP yang dijelaskan:
 
-1. **Class** adalah template atau blueprint dari object. Pada kode ini, `Mahasiswa`, `MahasiswaDetail`, dan `MahasiswaBeraksi` adalah contoh dari class.
+1. **Class** adalah template atau blueprint dari object. Pada kode ini, `Barang`, `BarangDiskon`, `Kasir` dan `KasirBeraksi` adalah contoh dari class.
 
 ```bash
-public class Mahasiswa {
+public class Barang {
     ...
 }
 
-public class MahasiswaDetail extends Mahasiswa {
+public class BarangDiskon extends Barang {
     ...
 }
 
-public class MahasiswaBeraksi {
+public class Kasir{
+    ...
+}
+
+public class KasirBeraksi {
     ...
 }
 ```
 
-2. **Object** adalah instance dari class. Pada kode ini, `mhs[i] = new MahasiswaDetail(nama, npm);` adalah contoh pembuatan object.
+2. **Object** adalah instance dari class. Pada kode ini, `Kasir kasir = new Kasir(kapasitas);`, `Barang barang = new Barang(nama, harga, jumlah);`, `BarangDiskon barang = new BarangDiskon(nama, harga, jumlah, diskon);`, 
+`daftarBarang = new Barang[kapasitas];` adalah contoh pembuatan object.
 
 ```bash
-mhs[i] = new MahasiswaDetail(nama, npm);
+//Pemanggilan object pada class KasirBeraksi
+Kasir kasir = new Kasir(kapasitas);
+Barang barang = new Barang(nama, harga, jumlah);
+BarangDiskon barang = new BarangDiskon(nama, harga, jumlah, diskon);
+
+//Pemanggilan object pada class Kasir
+daftarBarang = new Barang[kapasitas];
 ```
 
 3. **Atribut** adalah variabel yang ada dalam class. Pada kode ini, `nama` dan `npm` adalah contoh atribut.
 
 ```bash
-String nama;
-String npm;
+    private String nama;
+    private double harga;
+    private int jumlah;
 ```
 
 4. **Constructor** adalah method yang pertama kali dijalankan pada saat pembuatan object. Pada kode ini, constructor ada di dalam class `Mahasiswa` dan `MahasiswaDetail`.
