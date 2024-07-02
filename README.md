@@ -151,33 +151,20 @@ public void tambahBarang(Barang barang) {
 
 //Method cetakStruk
 public void cetakStruk() {
-    double total = 0;
-    System.out.println("===== Struk Pembelian =====");
-    for (int i = 0; i < jumlahBarang; i++) {
-        Barang barang = daftarBarang[i];
-        System.out.println(barang.getNama() + " - " + barang.getJumlah() + " x " + barang.getHarga() + " = " + barang.hitungTotalHarga());
-        total += barang.hitungTotalHarga();
-    }
+    ....
     if (total > 1000000) {
         System.out.println("Anda mendapatkan diskon 10%!");
         total *= 0.9;
     }
-    System.out.println("===========================");
-    System.out.println("Total: " + total);
+    ....
 }
 
 //Method Main
 public static void main(String[] args) {
 if (pilihan == 1) {
-    Barang barang = new Barang(nama, harga, jumlah);
-    kasir.tambahBarang(barang);
+    ....
 } else if (pilihan == 2) {
-    System.out.print("Diskon (misal 0.1 untuk 10%): ");
-    double diskon = scanner.nextDouble();
-    BarangDiskon barang = new BarangDiskon(nama, harga, jumlah, diskon);
-    kasir.tambahBarang(barang);
-} else {
-    System.out.println("Pilihan tidak valid!");
+    ....
 }
 ```
 
