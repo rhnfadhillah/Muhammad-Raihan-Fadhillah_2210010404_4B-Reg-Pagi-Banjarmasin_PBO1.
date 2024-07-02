@@ -1,6 +1,6 @@
 # Proyek Akhir Pemrograman Berbasis Objek 1
 
-Proyek ini adalah contoh sederhana aplikasi Kasir menggunakan Java sebagai proyek tugas akhir dari mata kuliah pemrograman berbasis objek 1.
+Proyek ini adalah contoh sederhana aplikasi Kasir menggunakan Java sebagai tugas akhir dari mata kuliah pemrograman berbasis objek 1.
 
 ## Deskripsi
 Aplikasi ini menerima input berupa kapasitas kasir, pilihan menu, nama barang, jumlah barang dan harga barang, dan memberikan output berupa informasi dari nama barang, jumlah, dan harga barang serta total dari jumlah di kalikan dengan harga barang.
