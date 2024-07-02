@@ -135,7 +135,8 @@ public double hitungTotalHarga() {
 }
 ```
 
-10. **Seleksi** adalah statement kontrol yang digunakan untuk membuat keputusan berdasarkan kondisi. Pada kode ini, digunakan seleksi `if else` dalam method `tambahBarang`, `cetakStruk` dan `Main`.
+10. **Seleksi** adalah statement kontrol yang digunakan untuk membuat keputusan berdasarkan kondisi. Pada kode ini, digunakan seleksi 
+`if else` dalam method `tambahBarang`, `cetakStruk` dan `Main`.
 
 ```bash
 //Method tambahBarang
