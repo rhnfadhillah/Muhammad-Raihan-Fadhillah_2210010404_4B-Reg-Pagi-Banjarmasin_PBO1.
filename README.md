@@ -35,12 +35,12 @@ public class KasirBeraksi {
 `daftarBarang = new Barang[kapasitas];` adalah contoh pembuatan object.
 
 ```bash
-//Pemanggilan object pada class KasirBeraksi
+//Pembuatan object pada class KasirBeraksi
 Kasir kasir = new Kasir(kapasitas);
 Barang barang = new Barang(nama, harga, jumlah);
 BarangDiskon barang = new BarangDiskon(nama, harga, jumlah, diskon);
 
-//Pemanggilan object pada class Kasir
+//Pembuatan object pada class Kasir
 daftarBarang = new Barang[kapasitas];
 ```
 
